@@ -14,14 +14,13 @@
 </head>
 <body>
 
-
 	<!-- main structure -->
 	<section class="main-structure">
 
 		<!-- header -->
 		<header class="main-header">
 			<!-- header-title -->
-			<div class="header-title">
+			<div class="header-title d-none d-sm-block">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12">
@@ -41,7 +40,7 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-5">
 							<div class="logo-main">
-								<img src="img/logo.png">
+								<img src="img/top-logo.png">
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-4 hide-on-mobile">
@@ -51,13 +50,13 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-4 hide-on-mobile">
 							<div class="button-blue">
-								<button class="btn btn-secondary">Free Consultation</button>
+								<a href="#contact-form" class="btn btn-secondary">Free Consultation</a>
 							</div>
 						</div>
 						<div class="col-lg-7 col-md-7 col-7 mobilendlaunguage">
 							<a href="tel:(855)555-5555">(855)555-5555</a>
 							 <select class="form-select" id="sel1" name="sellist1">
-					      <option>FR</option>
+					      <option>SP</option>
 					      <option>EN</option>
 					    </select>
 						</div>
@@ -75,7 +74,7 @@
 						<div class="banner-content">
 							<h1>DUI charge?</h1>
 							<p>Your Future is at stake. Get the right law firm on your side now.</p>
-							<button class="btn btn-secondary">Free Consultation</button>
+							<a href="#contact-form" class="btn btn-secondary">Free Consultation</a>
 						</div>
 					</div>
 				</div>
@@ -119,7 +118,7 @@
 		     							<li><img src="img/star.png"></li>
 		     							<li><img src="img/star.png"></li>
 		     						</ul>
-		     						<p>4.8/5 sTAR RATING</p>
+		     						<p>4.8/5 STAR RATING</p>
 		     					</div>
 	     					</div>
 	     				</div>
@@ -218,17 +217,27 @@
 							</div>
 							<div class="row mb-4">
 							    <div class="col-lg-12 col-md-12 col-sm-12">
+							      <input required name="phone" type="email" class="form-control" id="inputEmail3" placeholder="Phone">
+							    </div>
+							 </div>
+							<div class="row mb-4">
+							    <div class="col-lg-12 col-md-12 col-sm-12">
 							      <input required name="email_address" type="email" class="form-control" id="inputEmail3" placeholder="Email">
 							    </div>
 							 </div>
 							 <div class="row mb-4">
 							 	<div class="col-lg-12 col-md-12 col-sm-12">
-							 		<input name="phone_number" id="id_phone_number" class="form-control" placeholder="Phone Number" type="tel">
+							 		<input name="county" id="id_phone_number" class="form-control" placeholder="County" type="tel">
 							 	</div>
 							 </div>
 							 <div class="row mb-4">
 							 	<div class="col-lg-12 col-md-12 col-sm-12">
-							 		<textarea required name="comments" class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4"></textarea>
+							 		<input name="type" id="id_phone_number" class="form-control" placeholder="DUI (Driving) or BUI (Boating)" type="tel">
+							 	</div>
+							 </div>
+							 <div class="row mb-4">
+							 	<div class="col-lg-12 col-md-12 col-sm-12">
+							 		<textarea required name="comments" class="form-control" id="exampleFormControlTextarea1" placeholder="Tell us about your case" rows="4"></textarea>
 							 	</div>
 							</div>
 							<button class="btn btn-secondary contact-form-button">Send form</button>
@@ -306,7 +315,7 @@
 	     			<div class="col-lg-12 col-md-12 col-sm-12">
 	     				<div class="dui-on-mb-img">
 	     					<img src="img/chargeddui.png">
-	     					<h2>Charged with a DUI? Your first call should be Ticket911</h2>
+	     					<h2>Charged with a DUI? Your first call should be DUI<span style="color: red;">GUYS</span>FLA</h2>
 	     					<ul>
 	     						<li><img src="img/tick.png">Case Evaluations are FREE and you are under no obligation to hire the firm.</li>
 	     						<li><img src="img/tick.png">Vigorously defend you, and will not back down.</li>
@@ -441,7 +450,7 @@
 	    					</div>
 	    					<div class="next-step-box">
 	    						<h3>04. Contact us</h3>
-	    						<p>The law requires that a DHSMV hearing is set within 10 days of a DUI arrest.  In order to challenge the administrative suspension of your license we must act within the time limit or your license will receive an automatic suspension. Call us 24/7 or complete the free consultation form to get started on your defence.</p>
+	    						<p>The law requires that a DHSMV hearing is set within 10 days of a DUI arrest in order to challenge the administrative suspension of your license. We must act in time or your license will receive an automatically suspension. Call us 24/7 or complete the free consultation form to get started on your defence.</p>
 	    					</div>
 	    					<div class="next-step-box">
 	    						<h3>05. HELP US HELP YOU</h3>
@@ -485,10 +494,10 @@
 	     		<div class="row">
 	     			<div class="col-lg-12 col-md-12 col-sm-12">
 		     			<div class="footer-para-content">
-		     				<p>Disclaimer: The legal information presented at this site should not be construed to be formal legal advice, nor should it be considered the formation of a lawyer or attorney-client relationship. Any case results presented on the site are based upon the facts of a particular case and do not represent a promise or guarantee. The contents of this website may contain legal advertising. If you would like to find out more information about your particular legal matter, contact our office for a free telephonic consultation. This web site is not intended to solicit clients for matters outside of the state of Florida. This is a branded network of DUI attorneys that connects prospective clients with professional representation.</p>
+		     				<p>Disclaimer: The legal information presented at this site should not be construed to be formal legal advice, nor should it be considered the formation of a lawyer or attorney-client relationship. Any case results presented on the site are based upon the facts of a particular case and do not represent a promise or guarantee. The contents of this website may contain legal advertising. If you would like to find out more information about your particular legal matter, contact our office for a free telephonic consultation. This web site is not intended to solicit clients for matters outside of the state of Florida. This is a branded network of DUI attorneys which connects prospective clients with professional representation.</p>
 		     				<div class="footer-logo-new">
-		     					<h5>copyright @2025 ticket911 inc. all rights reserved </h5>
-		     					<img src="img/newfooterlogo.png">
+		     					<h5>copyright @2025 duiguysfla inc. all rights reserved </h5>
+		     					<img src="img/duiguysfla.png">
 		     				</div>
 		     			</div>
 		     		</div>
@@ -501,7 +510,14 @@
 	<!-- main structure -->
 		
 	
-
+<!-- sticky-menu -->
+		<section class="sticky-menu-design">
+			<div class="sticky-menu-tags">
+				<a href="tel:+18444409111"><img class="newmob-img" src="img/free-call.png"> Call 24/7</a>
+				<a  href="#contact-form"><img src="img/free-quote.png"> Free Consultation</a>
+			</div>
+		</section>
+		<!-- sticky-menu -->
 
 
 
