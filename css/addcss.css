@@ -946,6 +946,10 @@ button.carousel-control-next {
   .header-navbar .container .row div:nth-of-type(4)  {
     width: fit-content;
 	  }
+
+	  .next-step-box-main {
+	  	gap: 25px;
+	  }
 }
 
 
