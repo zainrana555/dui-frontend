@@ -893,6 +893,7 @@ button.carousel-control-next {
 
 
 @media screen and (max-width: 380px) {
+
   .mobilendlaunguage a {
     font-size: 13px;
   }
@@ -902,4 +903,12 @@ button.carousel-control-next {
   .header-navbar  {
   	padding: 10px 0px;
   }
+
+}
+
+
+@media screen and (max-width: 768px) {
+	.top-lawyers-list ul li {
+		font-size: 24px;
+	}
 }
