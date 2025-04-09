@@ -890,3 +890,16 @@ button.carousel-control-next {
 	}
 }
 /*sticky-menu-design enddd*/
+
+
+@media screen and (max-width: 380px) {
+  .mobilendlaunguage a {
+    font-size: 13px;
+  }
+  .mobilendlaunguage select {
+    font-size: 13px;
+  }
+  .header-navbar  {
+  	padding: 10px 0px;
+  }
+}
