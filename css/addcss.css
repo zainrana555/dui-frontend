@@ -845,7 +845,49 @@ button.carousel-control-next {
 }
 
 
+.logo-red-color {
+	color: #C70505;
+}
 
+.form-main input::-webkit-input-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.form-main input::-moz-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.form-main input:-ms-input-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.form-main input::placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.form-main textarea::-webkit-input-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.form-main textarea::-moz-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.form-main textarea:-ms-input-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.form-main textarea::placeholder {
+  color: #333;
+  opacity: 1;
+}
 
 
 /*sticky-menu-design*/
@@ -1010,3 +1052,23 @@ button.carousel-control-next {
       padding-bottom: 80px;
     }
   }
+
+
+
+@media screen and (min-width: 768px) {
+	.banner-content a {
+		border-radius: unset !important;
+	}
+	.twopartners-img img {
+		width: 335px;
+		padding-top: 30px;
+	}
+	.top-lawyers-list ul {
+		text-transform: capitalize;
+		margin-top: 40px;
+		padding-left: 20px;
+	}
+	.twopartners-img {
+		text-align: center;
+	}
+}
