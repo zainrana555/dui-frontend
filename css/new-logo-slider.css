@@ -1,0 +1,205 @@
+/*fonts add*/
+@font-face {
+  font-family: 'Georgia Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Georgia Regular'), url('../fonts/georgia.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Georgia Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Georgia Bold'), url('../fonts/georgiab.woff') format('woff');
+}
+/*pre loader*/
+  .circle {
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      position:absolute;
+      margin:auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+    border: 4px solid white;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  .main-preloader{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+  }
+  #preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+
+/*logo slider*/
+.slide-track .slide img {
+  width: 100px;
+  animation: scroll 30s linear infinite;
+}
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+.slide{
+	display:flex;
+	align-items: center;
+}
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-1000%)}
+}
+
+/*slider*/
+.testimonial-section-main {
+    padding: 95px 0;
+}
+.client-testimonial-carousel .owl-dots button {
+    height: 5px;
+    background: #E6BE69 !important;
+    width: 20px;
+    display: inline-block;
+    margin: 5px;
+    transition: .2s;
+    border-radius: 2px;
+}
+.client-testimonial-carousel button.owl-dot.active {
+    background: #2B2B2B !important;
+    width: 30px;
+}
+.client-testimonial-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px
+}
+.single-testimonial-item {
+    position: relative;
+    border: 1px solid var(--Dark-Gray, #2B2B2B);
+    margin: 2px;
+    padding: 20px;
+    border-radius: 18px;
+    height: 400px;
+}
+.single-testimonial-item h3 {
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 0;
+}
+.single-testimonial-item h3 span {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.single-testimonial-item p{
+  font-size: 16px;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 24px;
+}
+.testimonial-header-main{
+  display: flex;
+  align-items: center;
+}
+.testimonial-header-main img{
+  width: 44px !important;
+  margin-right: 15px;
+}
+.testimonial-heading h3{
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: 'Georgia Bold';
+  margin-bottom: 2px;
+ }
+ .testimonial-heading p{
+  font-size: 12px;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 0px !important;
+ }
+ .testimonial-star-design{
+  display: flex;
+  margin-top: 24px;
+ }
+.testimonial-star-design img{
+  width: 20px !important;
+  margin-right: 5px;
+}
+.testminial-heading-paragraph{
+  text-align: center;
+}
+.testminial-heading-paragraph button{
+  margin-bottom: 56px;
+}
+.testminial-heading-paragraph p{
+  font-size: 18px;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.customer-review-heading{
+  margin-bottom: 16px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

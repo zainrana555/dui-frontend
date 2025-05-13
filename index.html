@@ -4,15 +4,25 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DUI GUYS FLA</title>
+	<title>DUIGUYS</title>
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<!-- stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/addcss.css">
+	<link rel="stylesheet" type="text/css" href="css/new-logo-slider.css">	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- testimonial slider -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 </head>
 <body>
+
+	<!-- pre loader -->
+	<div id="preloader" class="main-preloader">
+		<div class="circle">
+        </div>
+	</div>
 
 	<!-- main structure -->
 	<section class="main-structure">
@@ -25,8 +35,8 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12">
 							<div class="header-title-child-parent">
-								<a class="mobile-tag" href="tel:18634749310"><img src="img/mob.png"> 1 (863) 474-9310</a>
-								<a href="tel:18634749310" class="">24 HOUR SUPPORT</a>
+								<a class="mobile-tag" href="tel:1 (855) 444-4911"><img src="img/mob.png"> 1 (855) 444-4911</a>
+								<a href="#"><img class="support-img" src="img/support.png"> 24 HOUR SUPPORT</a>
 							</div>
 						</div>
 					</div>
@@ -38,26 +48,42 @@
 			<div class="header-navbar">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-5 logo-div">
-							<div class="logo-main">
-								<img src="img/top-logo.png">
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-4 hide-on-mobile">
-							<div class="header-text">
-								<p>Call for a free consultation and case evaluation</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-4 hide-on-mobile">
-							<div class="button-blue">
-								<a href="#contact-form" class="btn btn-secondary">Free Consultation</a>
-							</div>
-						</div>
-						<div class="col-lg-7 col-md-7 col-7 mobilendlaunguage">
-							 <select class="form-select" id="sel1" name="sellist1">
-					      <option>SP</option>
-					      <option>EN</option>
-					    </select>
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<nav class="navbar navbar-expand-lg">
+		
+							    <a class="navbar-brand" href="index.html"><img src="img/logo.png"> </a>
+							    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"  onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+							    	 <svg width="40" height="40" viewBox="0 0 100 100">
+								        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+								        <path class="line line2" d="M 20,50 H 80" />
+								        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+								      </svg>
+							    </button>
+							    <div class="collapse navbar-collapse" id="navbarNav">
+							      <ul class="navbar-nav">
+							        <li class="nav-item">
+							          <a class="nav-link active" aria-current="page" href="#">Practice Areas</a>
+							        </li>
+							        <li class="nav-item">
+							          <a class="nav-link" href="team.html">Team</a>
+							        </li>
+							         <li class="nav-item">
+							          <a class="nav-link" href="case-result.html">Case Results</a>
+							        </li>
+							        <li class="nav-item">
+							          <a class="nav-link" href="contact-us.html">Contact</a>
+							        </li>
+							      </ul>
+							    </div>
+							    <div class="header-right-button-text">
+							    	<ul>
+							    		<li><a href="#">SP</a></li>
+							    		<li><a href="#">
+							    			<button class="btn btn-secondary">Free Consultation</button>
+							    		</a></li>
+							    	</ul>
+							    </div>
+							</nav>
 						</div>
 					</div>
 				</div>
@@ -69,11 +95,12 @@
 		<section class="banner-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 col-md-12 col-sm-12 mx-auto d-block">
+					<div class="col-lg-6 col-md-12 col-sm-12 mx-auto d-block">
 						<div class="banner-content">
-							<h1>DUI charge?</h1>
-							<p>Your Future is at stake. Get the right law firm on your side now.</p>
-							<a href="#contact-form" class="btn btn-secondary">Free Consultation</a>
+							<h1>florida’s elite DUI defense network</h1>
+							<p>Clayman. Schertzer. Ansara. Sessa.</p>
+							<h5>Trusted, battle-tested criminal defense attorneys, <br> committed to defend your future.</h5>
+							<button class="btn btn-secondary">Free DUI Case Evaluation <img src="img/newarrow.png"></button>
 						</div>
 					</div>
 				</div>
@@ -81,448 +108,512 @@
 		</section>
 		<!-- banner section -->
 
-		<!-- mobile-top-lawyers -->
-		<section class="mobile-top-lawyers">
-			<div class="container border-bottom-design">
+		<!-- clients-detail -->
+		<section class="client-details">
+			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="top-lawyers-list">
+					<div class="col-lg-3 col-md-12 col-sm-12">
+						<div class="client-details-main image-one-design">
+							<!-- <img src="img/clientimg.png"> -->
+							<div class="client-heading">
+								<h3>Richard Ansara</h3>
+								<p>Criminal Defense Attorney</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-12 col-sm-12">
+						<div class="client-details-main image-two-design">
+							<!-- <img src="img/clientimg1.png"> -->
+							<div class="client-heading">
+								<h3>Steven Sessa</h3>
+								<p>Criminal Defense Attorney</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-12 col-sm-12">
+						<div class="client-details-main image-three-design">
+							<!-- <img src="img/clientimg2.png"> -->
+							<div class="client-heading">
+								<h3>Andrew Schertzer</h3>
+								<p>Criminal Defense Attorney</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-12 col-sm-12">
+						<div class="client-details-main image-four-design">
+							<!-- <img src="img/clientimg2.png"> -->
+							<div class="client-heading">
+								<h3>Eric Clayman</h3>
+								<p>Criminal Defense Attorney</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- clients-detail -->
+
+		<!-- logos-slider -->
+		<section class="logo-slider">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12 mx-auto d-block">
+						<div class="logo-slider-heading">
+							<img class="logo-left-vector" src="img/logovector.png">
+							<h2>5 firms that <br> have your back</h2>
+							<img class="logo-right-vector" src="img/logovectorR.png">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="slider">
+					  <div class="slide-track">
+					    <div class="slide">
+					      <img class="single-design-implement" src="img/aa.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img src="img/logoslide.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img class="single-design-implement" src="img/aa.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img src="img/logoslide1.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img class="single-design-implement" src="img/aa.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img src="img/logoslide.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img class="single-design-implement" src="img/aa.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img src="img/logoslide1.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img class="single-design-implement" src="img/aa.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img src="img/logoslide.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img class="single-design-implement" src="img/aa.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img src="img/logoslide1.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img class="single-design-implement" src="img/aa.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img src="img/logoslide.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img class="single-design-implement" src="img/aa.png" alt="">
+					    </div>
+					   <div class="slide">
+					      <img src="img/logoslide1.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img class="single-design-implement" src="img/aa.png" alt="">
+					    </div>
+					    <div class="slide">
+					      <img src="img/logoslide.png" alt="">
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12 mx-auto d-block">
+						<div class="logo-slider-paragraph">
+							<p>DUIGUYSFLA provides access to the top DUI defense lawyers across Florida offering unparalleled expertise, results-driven strategies, and relentless advocacy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- logos-slider -->
+
+		<!-- legal-team -->
+		<section class="legal-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="legal-team-detail">
+							<h3>Our Legal Team</h3>
 							<ul>
-								<li><img src="img/tick.png">1000+ DUI cases </li>
-								<li><img src="img/tick.png">60 years experience</li>
-								<li><img src="img/tick.png">Former prosecutors</li>
+								<li>Former prosecutors</li>
+								<li>Thousands of DUI Cases Defended</li>
+								<li>Aggressive, Trusted, Proven</li>
+								<li>Over 100 years of DUI defense success</li>
+								<li>Top rates trial attorneys</li>
 							</ul>
-							<img src="img/circlelogo.png">
+							<button class="btn btn-secondary">Meet the team <img src="img/newarrow.png"></button>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="our-legal-img">
+							<img src="img/yearstext.png">
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- mobile-top-lawyers -->
+		<!-- legal-team -->
 
-		<!-- testimonial sectin -->
-	     <section class="testimonial-section-on-mobile">
-	     	<div class="container border-bottom-design">
-	     		<div class="row">
-	     			<div class="col-lg-8 col-md-12 col-sm-12">
-	     				<div class="testimonial-heading">
-	     					<h2>Client Testimonials</h2>
-	     					<div class="testimonial-review-main">
-		     					<div class="staricon-content">
-		     						<ul>
-		     							<li><img src="img/googleimg.png"></li>
-		     							<li><img src="img/star.png"></li>
-		     							<li><img src="img/star.png"></li>
-		     							<li><img src="img/star.png"></li>
-		     							<li><img src="img/star.png"></li>
-		     							<li><img src="img/star.png"></li>
-		     						</ul>
-		     						<p>4.8/5 STAR RATING</p>
-		     					</div>
-	     					</div>
-	     				</div>
-	     			</div>
-	     			<div class="col-lg-4 col-md-12 col-sm-12">
-	     				<div class="testimonial-main">
-	     				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-							  <div class="carousel-indicators">
-							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-							  </div>
-							  <div class="carousel-inner">
-							    <div class="carousel-item active">
-							       <p>“I had just gotten released from my arrest and I was totally panicked regarding my future.  Thank god I was fortunate enough to land on the DuiGuys for help.  The support I received completely changed my headspace.  Their thorough attention to detail as well as extensive knowledge on how to handle my file changed my outcome and my life!  Thank you so much for all that you did for me.  Highly recommend this group!”</p>
-								    <h5>- Steven Reynolds</h5>
-							    </div>
-							    <div class="carousel-item">
-							       <p>“The service was above my expectations. I really didnt expect such an incredible outcome.  My case was actually acquitted.  The team experience, expertise and dedication made a critical difference towards the outcome of my case. I highly recommend this firm!”</p>
-								   <h5>- Emily Johnson</h5>
-							    </div>
-							    <div class="carousel-item">
-							      <p>“I had a great experience with this law firm. They provided excellent support throughout my case, keeping me well-informed and prepared for every step. Their professionalism and expertise made a real difference and I truly appreciated the help in achieving a successful outcome. Highly recommended!”</p>
-								  <h5>- Amir Fahoud</h5>
-							    </div>
-							  </div>
-							 <!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Previous</span>
-							  </button> -->
-							  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden"></span>
-							     <img src="img/rightarrow.png">
-							  </button>
-							</div>
-	     			</div>
-	     		</div>
-	     	</div>
-	     </section>
-	     <!-- testimonial sectin -->
-
-		<!-- top lawyers -->
-		<section class="top-lawyers">
-			<div class="container border-bottom-design">
+		<!-- choose-us -->
+		<section class="choose-us">
+			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="circle-logo-deisgn">
-							<!-- <img src="img/circlelogo.png"> -->
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-7 col-md-12 col-sm-12">
-						<div class="top-lawyers-list">
-							<h2>Top DUI Lawyers</h2>
-							<p>A DUI charge can be overwhelming, but you don’t have to face it alone. Our experienced legal team understands the complexities of DUI laws and will fight to protect your rights, your license, and your future.</p>
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="choose-us-content">
+							<h3>Why Choose Us?</h3>
 							<ul>
-								<li><img src="img/tick.png">1000+ DUI cases </li>
-								<li><img src="img/tick.png">60 years experience</li>
-								<li><img src="img/tick.png">Former prosecutors</li>
+								<li>100+ Years Combined Experience</li>
+								<li>Thousands of DUI Cases Won</li>
+								<li>Personalized, Aggressive Defense</li>
+								<li>Available 24/7 Across Florida</li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-12 col-sm-12">
-						<div class="twopartners-img">
-							<!-- <img src="img/twopartners.png"> -->
-							<img src="img/circlelogo.png">
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
-		<!-- top lawyers -->
+		<!-- choose-us -->
 
-		<!-- contact form -->
-		<section class="contact-us-form">
-			<div class="container border-bottom-design">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="form-heading">
-							<h2>Start Your Free Case<br> Evaluation Now!</h2>
-							<p>Fill out the form below and one of our associates will get back to you shortly!</p>
+		<!-- testimonial-section-main -->
+		<section class="testimonial-section-main">
+	        <div class="container">
+	        	<div class="row">
+	        		<div class="col-lg-7 col-md-12 col-sm-12 mx-auto d-block">
+	        			<div class="logo-slider-heading customer-review-heading">
+							<img class="logo-left-vector" src="img/logovector.png">
+							<h2>Customer Reviews</h2>
+							<img class="logo-right-vector" src="img/logovectorR.png">
 						</div>
+	        		</div>
+	        	</div>
+	        	<div class="row">
+	        		<div class="col-lg-5 col-md-12 col-sm-12 mx-auto d-block">
+	        			<div class="testminial-heading-paragraph">
+	        				<p>See what our clients say about their experiences and outcomes with our DUI defense team</p>
+	        				<button class="btn btn-secondary">More Testimonials <img src="img/newarrow.png"></button>
+	        			</div>
+	        		</div>
+	        	</div>
+	            <div class="row">
+	                <div class="col-lg-12 col-md-12 col-sm-12">
+	                    <div class="owl-carousel client-testimonial-carousel">
+	                        <div class="single-testimonial-item">
+	                           <div class="testimonial-header-main">
+	                           	<img src="img/testimonial-head-img.png">
+		                           	<div class="testimonial-heading">
+		                           		<h3>Emily Johnson</h3>
+		                           		<p>February 12, 2024</p>
+		                           	</div>
+	                           </div>
+	                           <div class="testimonial-star-design">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           </div>
+	                           <p>The service was above my expectations. I really didn’t expect such an incredible outcome. My case was actually acquitted. The team experience, expertise and dedication made a critical difference towards the outcome of my case. I highly recommend this firm!</p>
+	                        </div>
+	                        <div class="single-testimonial-item">
+	                           <div class="testimonial-header-main">
+	                           	<img src="img/testimonial-head-img.png">
+		                           	<div class="testimonial-heading">
+		                           		<h3>Emily Johnson</h3>
+		                           		<p>February 12, 2024</p>
+		                           	</div>
+	                           </div>
+	                           <div class="testimonial-star-design">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           </div>
+	                           <p>I had just gotten released from my arrest and I was totally panicked regarding my future. Thank god I was fortunate enough to land on the DuiGuys for help. The support I received completely changed my headspace. Their thorough attention to detail as well as extensive knowledge on how to handle my file changed my outcome and my life! Thank you so much for all that you did for me. Highly recommend this group!</p>
+	                        </div>
+	                        <div class="single-testimonial-item">
+	                           <div class="testimonial-header-main">
+	                           	<img src="img/testimonial-head-img.png">
+		                           	<div class="testimonial-heading">
+		                           		<h3>Emily Johnson</h3>
+		                           		<p>February 12, 2024</p>
+		                           	</div>
+	                           </div>
+	                           <div class="testimonial-star-design">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           </div>
+	                           <p>I had a great experience with this law firm. They provided excellent support throughout my case, keeping me well-informed and prepared for every step. Their professionalism and expertise made a real difference and I truly appreciated the help in achieving a successful outcome. Highly recommended!</p>
+	                        </div>
+	                        <div class="single-testimonial-item">
+	                           <div class="testimonial-header-main">
+	                           	<img src="img/testimonial-head-img.png">
+		                           	<div class="testimonial-heading">
+		                           		<h3>Emily Johnson</h3>
+		                           		<p>February 12, 2024</p>
+		                           	</div>
+	                           </div>
+	                           <div class="testimonial-star-design">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           	<img src="img/starimg.png">
+	                           </div>
+	                           <p>The service was above my expectations. I really didn’t expect such an incredible outcome. My case was actually acquitted. The team experience, expertise and dedication made a critical difference towards the outcome of my case. I highly recommend this firm!</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+	    <!-- testimonial-section-main -->
+
+	    <!-- accordian-section -->
+	    <section class="accordian-section">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-7 col-md-12 col-sm-12 mx-auto d-block">
+	    				<div class="logo-slider-heading accordian-heading-main">
+							<img class="logo-left-vector" src="img/logovector.png">
+							<h2>Frequently Asked <br> Questions</h2>
+							<img class="logo-right-vector" src="img/logovectorR.png">
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-lg-5 col-md-12 col-sm-12 mx-auto d-block">
+	    				<div class="accordian-header-paragraph">
+							<p>Get clear answers to the most common questions about dUI charges and your legal options</p>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-lg-7 col-md-12 col-sm-12 mx-auto d-block">
+	    				<div class="container">
+						  <div class="accordion" id="accordionExample">
+						    <div class="accordion-item mb-4">
+						      <h2 class="accordion-header">
+						        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          How much does it cost to hire a DUI attorney?
+						        </button>
+						      </h2>
+						      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+						        <div class="accordion-body">
+						        	<p>The cost varies depending on the specifics of your case. DUI Guys FLA offers free consultations to assess your situation and provide a clear understanding of potential fees.</p>
+						        </div>
+						      </div>
+						    </div>
+						    <div class="accordion-item mb-4">
+						      <h2 class="accordion-header">
+						        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          What should I do immediately after a DUI arrest?
+						        </button>
+						      </h2>
+						      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						        <div class="accordion-body">
+						          	<p>The cost varies depending on the specifics of your case. DUI Guys FLA offers free consultations to assess your situation and provide a clear understanding of potential fees.</p>
+						        </div>
+						      </div>
+						    </div>
+						    <div class="accordion-item mb-4">
+						      <h2 class="accordion-header">
+						        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          Can I refuse a breathalyzer test in Florida?
+						        </button>
+						      </h2>
+						      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						        <div class="accordion-body">
+						          	<p>The cost varies depending on the specifics of your case. DUI Guys FLA offers free consultations to assess your situation and provide a clear understanding of potential fees.</p>
+						        </div>
+						      </div>
+						    </div>
+						    <div class="accordion-item mb-4">
+						      <h2 class="accordion-header">
+						        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						          Will I lose my driver's license after a DUI arrest?
+						        </button>
+						      </h2>
+						      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						        <div class="accordion-body">
+						          	<p>The cost varies depending on the specifics of your case. DUI Guys FLA offers free consultations to assess your situation and provide a clear understanding of potential fees.</p>
+						        </div>
+						      </div>
+						    </div>
+						    <div class="accordion-item">
+						      <h2 class="accordion-header">
+						        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+						          What are the potential penalties for a DUI conviction? 
+						        </button>
+						      </h2>
+						      <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						        <div class="accordion-body">
+						          	<p>The cost varies depending on the specifics of your case. DUI Guys FLA offers free consultations to assess your situation and provide a clear understanding of potential fees.</p>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="faq-button-part">
+						  	<button class="btn btn-secondary">See All FAQs <img src="img/newarrow.png"></button>
+						  </div>
+						</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+	    <!-- accordian-section -->
+
+	    <!-- affordable-defense -->
+	    <section class="affordable-defense">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-6 col-md-12 col-sm-12">
+	    				<div class="affordable-defense-img">
+	    					<img src="img/affordableimg.png">
+	    				</div>
+	    			</div>
+	    			<div class="col-lg-6 col-md-12 col-sm-12">
+	    				<div class="affordable-content">
+	    					<h2>Affordable defense,<br> without the stress</h2>
+	    					<p>We offer flexible payment plans and financing options - so you can focus on your case, not the cost. </p>
+	    					<button class="btn btn-secondary">See our plans <img src="img/newarrow.png"></button>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+	    <!-- affordable-defense -->
+
+	    <!-- start-case -->
+	    <section class="start-case-section">
+	    	<div class="start-case-form">
+	    		<h3>Start Your Free Case <br> Evaluation Now!</h3>
+	    		<p>Fill out the form below and one of our associates will get back to you shortly!</p>
+	    		<form>
+	    			<div class="row">
+					  <div class="col">
+					    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+					  </div>
+					  <div class="col">
+					    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+					  </div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-10 col-md-12 col-sm-12 mx-auto d-block">
-						<form class="form-main" id="contact-form" method="post">
-							<div class="row mb-4">
-							  <div class="col-lg-6 col-md-6 col-12 first-name-space-on-mb">
-							    <input required name="first_name" type="text" class="form-control" placeholder="First name" aria-label="First name">
-							  </div>
-							  <div class="col-lg-6 col-md-6 col-12">
-							    <input required name="last_name" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-							  </div>
-							</div>
-							<div class="row mb-4">
-							    <div class="col-lg-12 col-md-12 col-sm-12">
-							      <input required name="phone" type="text" class="form-control" id="inputEmail3" placeholder="Phone">
-							    </div>
-							 </div>
-							<div class="row mb-4">
-							    <div class="col-lg-12 col-md-12 col-sm-12">
-							      <input required name="email_address" type="email" class="form-control" id="inputEmail3" placeholder="Email">
-							    </div>
-							 </div>
-							 <div class="row mb-4">
-							 	<div class="col-lg-12 col-md-12 col-sm-12">
-							 		<input name="county" type="text" class="form-control" placeholder="County" type="tel">
-							 	</div>
-							 </div>
-							 <div class="row mb-4">
-							 	<div class="col-lg-12 col-md-12 col-sm-12">
-							 		<input name="type" type="text" class="form-control" placeholder="DUI (Driving) or BUI (Boating)" type="tel">
-							 	</div>
-							 </div>
-							 <div class="row mb-4">
-							 	<div class="col-lg-12 col-md-12 col-sm-12">
-							 		<textarea required name="comments" class="form-control" id="exampleFormControlTextarea1" placeholder="Tell us about your case" rows="4"></textarea>
-							 	</div>
-							</div>
-							<button class="btn btn-secondary contact-form-button">Submit</button>
-						</form>
+					<div class="row">
+					  <div class="col">
+					    <input type="Phone" class="form-control" placeholder="Phone" aria-label="Phone">
+					  </div>
+					  <div class="col">
+					    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+					  </div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<!-- contact form -->
-
-		 <!-- testimonial sectin -->
-	     <section class="testimonial-section">
-	     	<div class="container">
-	     		<div class="row">
-	     			<div class="col-lg-8 col-md-12 col-sm-12">
-	     				<div class="testimonial-heading">
-	     					<h2>Client Testimonials</h2>
-	     					<div class="testimonial-review-main">
-	     						<img src="img/googleimg.png">
-		     					<div class="staricon-content">
-		     						<ul>
-		     							<li><img src="img/star.png"></li>
-		     							<li><img src="img/star.png"></li>
-		     							<li><img src="img/star.png"></li>
-		     							<li><img src="img/star.png"></li>
-		     							<li><img src="img/star.png"></li>
-		     						</ul>
-		     						<p>4.6/5 STAR RATING <br> 600+ REVIEWS</p>
-		     					</div>
-	     					</div>
-	     				</div>
-	     			</div>
-	     			<div class="col-lg-4 col-md-12 col-sm-12">
-	     				<div class="testimonial-main">
-	     				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-							  <div class="carousel-indicators">
-							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-							  </div>
-							  <div class="carousel-inner">
-							    <div class="carousel-item active">
-							       <p>“I had just gotten released from my arrest and I was totally panicked regarding my future.  Thank god I was fortunate enough to land on the DuiGuys for help.  The support I received completely changed my headspace.  Their thorough attention to detail as well as extensive knowledge on how to handle my file changed my outcome and my life!  Thank you so much for all that you did for me.  Highly recommend this group!”</p>
-								    <h5>- Steven Reynolds</h5>
-							    </div>
-							    <div class="carousel-item">
-							       <p>“The service was above my expectations. I really didnt expect such an incredible outcome.  My case was actually acquitted.  The team experience, expertise and dedication made a critical difference towards the outcome of my case. I highly recommend this firm!”</p>
-								   <h5>- Emily Johnson</h5>
-							    </div>
-							    <div class="carousel-item">
-							      <p>“I had a great experience with this law firm. They provided excellent support throughout my case, keeping me well-informed and prepared for every step. Their professionalism and expertise made a real difference and I truly appreciated the help in achieving a successful outcome. Highly recommended!”</p>
-								  <h5>- Amir Fahoud</h5>
-							    </div>
-							  </div>
-							 <!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Previous</span>
-							  </button> -->
-							  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden"></span>
-							     <img src="img/rightarrow.png">
-							  </button>
-							</div>
-	     			</div>
-	     		</div>
-	     	</div>
-	     </section>
-	     <!-- testimonial sectin -->
-
-	     <!-- charged-dui -->
-	     <section class="charged-dui-on-mb">
-	     	<div class="container border-bottom-design">
-	     		<div class="row">
-	     			<div class="col-lg-12 col-md-12 col-sm-12">
-	     				<div class="dui-on-mb-img">
-	     					<img src="img/chargeddui.png">
-	     					<h2>Charged with a DUI? Your first call should be DUI<span class="logo-red-color">GUYS</span>FLA</h2>
-	     					<ul>
-	     						<li><img src="img/tick.png">Case Evaluations are FREE and you are under no obligation to hire the firm.</li>
-	     						<li><img src="img/tick.png">Vigorously defend you, and will not back down.</li>
-	     						<li><img src="img/tick.png">Recommend strategies specific to your circumstances.</li>
-	     						<li><img src="img/tick.png">We have financing and affordable payment plans</li>
-	     					</ul>
-	     				</div>
-	     			</div>
-	     		</div>
-	     	</div>
-	     </section>
-	     <!-- charged-dui -->
-
-	     <!-- truck-vehicle -->
-	    <section class="truck-and-vehicle-section">
-	    	<div class="container">
-	    		<div class="row">
-	    			<div class="col-lg-6 col-md-12 col-sm-12">
-			    		<div class="truck-and-vehicle-content">
-			    			<h2>Charged with a DUI?<br> Your first call should be DUI<span class="logo-red-color">GUYS</span>FLA</h2>
-			    			<ul>
-			    				<li><img src="img/tick.png"> Case Evaluations are FREE and you are under no obligation to hire the firm.</li>
-			    				<li><img src="img/tick.png"> Vigorously defend you, and will not back down.</li>
-			    				<li><img src="img/tick.png">Recommend strategies specific to your circumstances.</li>
-			    				<li><img src="img/tick.png">We have financing and affordable payment plans</li>
-			    			</ul>
-			    		</div>
-			    	</div>
-	    		</div>
+					<div class="row">
+					  <div class="col">
+					    <input type="text" class="form-control" placeholder="DUI (Driving) or BUI (Boating)" aria-label="DUI (Driving) or BUI (Boating)">
+					  </div>
+					  <div class="col">
+					    <input type="text" class="form-control" placeholder="Tell us about your case" aria-label="Tell us about your case">
+					  </div>
+					</div>
+					<button type="Submit" class="btn btn-danger">Submit</button>
+	    		</form>
+	    	</div>
+	    	<div class="start-case-image">
+	    		<img src="img/startcase.png">
 	    	</div>
 	    </section>
-	    <!-- truck-vehicle -->
+	    <!-- start-case -->
 
-	    <!-- best choosing -->
-	      <section class="best-choosing">
-	      	<div class="container border-bottom-design">
-	      		<div class="row">
-	      			<div class="col-lg-6 col-md-12 col-sm-12">
-	      				<div class="best-choosing-content">
-	      					<h2>Choosing the Best <br> Defense is Critical</h2>
-	      					<p>A DUI conviction may carry serious consequences for many years. However, you have the right to defend yourself against any and all charges facing you.</p>
-	      					<p>If the police didn’t follow the law closely, you may be able to challenge part or all of the evidence brought against you.</p>
-	      				</div>
-	      			</div>
-	      			<div class="col-lg-6 col-md-12 col-sm-12">
-	      				<div class="Client-benefits">
-	      					<h2>Client Benefits</h2>
-	      					<ul>
-	      						<li><img src="img/circletick.png">We are available 24/7 by phone to manage your case</li>
-	      						<li><img src="img/circletick.png">Highly respected reputation in our field of law</li>
-	      						<li><img src="img/circletick.png">Voted Top Lawyers in the state of Florida </li>
-	      					</ul>
-	      				</div>
-	      			</div>
-	      		</div>
-	      	</div>
-	      </section>
-	       <!-- best choosing -->
-
-	    <!-- dui matters -->
-	    <section class="dui-matters">
+	    <!-- subscribe-now -->
+	    <section class="subscribe-now">
 	    	<div class="container">
 	    		<div class="row">
-	    			<div class="col-lg-12 col-md-12 col-sm-12">
-	    				<div class="dui-matters-heading">
-	    					<h2>We handle all types of DUI Matters</h2>
-	    				</div>
-	    			</div>
-	    		</div>
-	    		<div class="row">
-	    			<div class="col-lg-9 col-md-12 col-sm-12 mx-auto d-block">
-	    				<div class="dui-boxes-main">
-	    					<div class="dui-box">
-	    						<img src="img/matter1.png">
-	    						<div class="dui-content">
-	    							<h3>Underage DUI</h3>
-	    							<p>If you are underage, and you are found to be drinking any amount of alcohol, you can face a DUI charge.</p>
-	    						</div>
-	    					</div>
-	    					<div class="dui-box">
-	    						<img src="img/carbg.png">
-	    						<div class="dui-content">
-	    							<h3>FELONY DUI</h3>
-	    							<p>If you have three DUI charges within a 10 year period or if your DUI results in injury or death, it can be charged as a felony. </p>
-	    						</div>
-	    					</div>
-	    					<div class="dui-box">
-	    						<img src="img/mencarbg.png">
-	    						<div class="dui-content">
-	    							<h3>COMMERCIAL DUI</h3>
-	    							<p>As a CDL driver you are held to a higher standard than that of a regularly licensed driver. </p>
-	    						</div>
-	    					</div>
-	    					<div class="dui-box">
-	    						<img src="img/keys.png">
-	    						<div class="dui-content">
-	    							<h3>DUI DRUGS</h3>
-	    							<p>These DUI cases involve allegations that impairment was caused not by alcohol, but by illegal or prescription medication. </p>
-	    						</div>
-	    					</div>
+	    			<div class="col-lg-8 col-md-12 col-sm-12 mx-auto d-block">
+	    				<div class="subscribe-now-main">
+	    					<div class="subscribe-now-content">
+		    					<h3>Your Driving Edge</h3>
+		    					<p>Stay current on new laws which may impact your driving record and your insurance premiums. Monthly tricks on how to stay ahead of driving violations.</p>
+		    				</div>
+		    				<div class="subscribe-now-input">
+		    					<input type="text" placeholder="Enter your email" name="">
+		    					<a href="#">
+		    						<button class="btn btn-basic">Subscribe Now <img src="img/newarrow.png"></button>
+		    					</a>
+		    				</div>
 	    				</div>
 	    			</div>
 	    		</div>
 	    	</div>
 	    </section>
-	    <!-- dui matters -->
+	    <!-- subscribe-now -->
 
-	    <!-- next step -->
-	    <section class="next-step">
-	    	<div class="container border-bottom-design">
+	    <!-- footer -->
+	    <section class="footer">
+	    	<div class="container">
 	    		<div class="row">
-	    			<div class="col-lg-12 col-md-12 col-sm-12">
-	    				<div class="next-step-heading">
-	    					<h2>Your Next Steps After a DUI Charge</h2>
+	    			<div class="col-lg-8 col-md-12 col-sm-12">
+	    				<div class="footer-list">
+	    					<ul>
+	    						<li><a href="#">Practice Areas</a></li>
+	    						<li><a href="#">Team</a></li>
+	    						<li><a href="#">Case Results</a></li>
+	    						<li><a href="#">Contact</a></li>
+	    					</ul>
+	    				</div>
+	    			</div>
+	    			<div class="col-lg-4 col-md-12 col-sm-12">
+	    				<div class="footer-socials">
+	    					<a href="#">
+	    						<img src="img/Facebook.png">
+	    					</a>
+	    					<a href="#">
+	    						<img src="img/Youtube.png">
+	    					</a>
+	    					<a href="#">
+	    						<img src="img/Instagram.png">
+	    					</a>
 	    				</div>
 	    			</div>
 	    		</div>
 	    		<div class="row">
 	    			<div class="col-lg-12 col-md-12 col-sm-12">
-	    				<div class="next-step-box-main">
-	    					<div class="next-step-box">
-	    						<h3>01. Paperwork</h3>
-	    						<p>Keep your tickets and any other paperwork or documents provided to you by the officer in a safe place and easily accessible.</p>
-	    					</div>
-	    					<div class="next-step-box">
-	    						<h3>02. safety</h3>
-	    						<p>Get home safely. You may feel shaken and embarrassed, but it’s important to call someone you trust or use an Uber ride provided by the officer.</p>
-	    					</div>
-	    					<div class="next-step-box">
-	    						<h3>03. COURT DATE</h3>
-	    						<p>Make your upcoming court date a top priority. This is a critical appearance which you will need to attend.</p>
-	    					</div>
-	    					<div class="next-step-box">
-	    						<h3>04. Contact us</h3>
-	    						<p>The law requires that a DHSMV hearing is set within 10 days of a DUI arrest in order to challenge the administrative suspension of your license. We must act in time or your license will receive an automatically suspension. Call us 24/7 or complete the free consultation form to get started on your defence.</p>
-	    					</div>
-	    					<div class="next-step-box">
-	    						<h3>05. HELP US HELP YOU</h3>
-	    						<p>Share your story, provide any official documents and evidence, and let our experienced lawyers guide you through this challenging time.</p>
-	    					</div>
-	    					<div class="next-step-box">
-	    						<h3>06. STAY QUIET</h3>
-	    						<p>Be mindful of who you talk to about this event. Keep your circle small and only share with those you trust.</p>
+	    				<div class="all-right-reserved">
+	    					<h4>© 2025 All rights reserved</h4>
+	    					<div class="terms-services">
+	    						<ul>
+	    							<li class="border-line-design">
+	    								<a href="#">Terms of Service  </a>
+	    							</li>
+	    							<li>
+	    								<a href="#">Privacy Policy</a>
+	    							</li>
+	    						</ul>
 	    					</div>
 	    				</div>
 	    			</div>
 	    		</div>
 	    	</div>
 	    </section>
-	    <!-- next step -->
-
-	    <!-- flexible -->
-	    <section class="flexible-sec">
-	    	<div class="container">
-	    		<div class="row flex-design">
-	    			<div class="col-lg-6 col-md-12 col-sm-12">
-	    				<div class="flexible-design">
-	    					<h3>Flexible</h3>
-	    					<h5>PAYMENT PLANS</h5>
-	    					<p>Facing a DUI charge can be overwhelming, but financial concerns shouldn’t stand in the way of your defense. We offer flexible payment plans to help you get the legal representation you need. Contact us to discuss your options.</p>
-	    				</div>
-	    			</div>
-	    			<div class="col-lg-6 col-md-12 col-sm-12">
-	    				<div class="flexibleimg">
-	    					<img src="img/flexibleimg.png">
-	    				</div>
-	    			</div>
-	    		</div>
-	    	</div>
-	    </section>
-	     <!-- flexible -->
-
-	     <!-- footer paragraph -->
-	     <section class="footer-paragraph">
-	     	<div class="container">
-	     		<div class="row">
-	     			<div class="col-lg-12 col-md-12 col-sm-12">
-		     			<div class="footer-para-content">
-		     				<p>Disclaimer: The legal information presented at this site should not be construed to be formal legal advice, nor should it be considered the formation of a lawyer or attorney-client relationship. Any case results presented on the site are based upon the facts of a particular case and do not represent a promise or guarantee. The contents of this website may contain legal advertising. If you would like to find out more information about your particular legal matter, contact our office for a free telephonic consultation. This web site is not intended to solicit clients for matters outside of the state of Florida. This is a branded network of DUI attorneys which connects prospective clients with professional representation.</p>
-		     				<div class="footer-logo-new">
-		     					<h5>copyright @2025 duiguysfla inc. all rights reserved </h5>
-		     					<img src="img/duiguysfla.png">
-		     				</div>
-		     			</div>
-		     		</div>
-	     		</div>
-	     	</div>
-	     </section>
-	      <!-- footer paragraph -->
+	    <!-- footer -->
 
 	</section>	
 	<!-- main structure -->
 		
 	
-<!-- sticky-menu -->
-<!-- <section class="sticky-menu-design">
-	<div class="sticky-menu-tags">
-		<a href=""><img class="newmob-img" src="img/free-call.png"> Call 24/7</a>
-		<a  href="#contact-form"><img src="img/free-quote.png"> Free Consultation</a>
-	</div>
-</section>
- --><!-- sticky-menu -->
 
-<div class="mobile-sticky-footer">
-  <a href="tel:+18634749310" class="sticky-button"><img class="newmob-img" src="img/free-call.png"> Call 24/7</a>
-  <a href="#contact-form" class="sticky-button">Free Consultation</a>
-</div>
+
+
 
 
 
@@ -533,64 +624,47 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- testimonial slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<!-- counter js -->
-<script src="js/counter.js"></script>
-
-<!-- read more js -->
-<script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-
-</script>
-
-<script>
-	var copy = document.querySelector(".logos-slide").cloneNode(true);
-document.querySelector(".logo-slider").appendChild(copy);
-</script>
-
+<!-- testimonial slider -->
 <script >
-		// fade in grid items  ==================================
-
-  $(document).on("scroll", function () {
-    var pageTop = $(document).scrollTop()
-    var pageBottom = pageTop + $(window).height()
-    var tags = $(".fadein")
-
-    for (var i = 0; i < tags.length; i++) {
-      var tag = tags[i]
-
-      if ($(tag).offset().top < pageBottom) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-      }
-    }
-  })
-</script>
-
-<script>
-	// Menu Button
-$('.toggle-btn').on('click', 	function(){
-		$(this).toggleClass('onclick');
-		$('.nav-container').toggleClass('visible');
+	$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+      items:3,
+     autoplay:true,
+      margin:30,
+      loop:true,
+      dots:true
+//      nav:true,
+//      navText:["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>" ]
+  });
 });
-
-
 </script>
+<!-- testimonial slider -->
+
+<!-- preeloader -->
+<script>
+     window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    
+    // Wait 5 seconds after page load
+    setTimeout(function () {
+      if (preloader) {
+        // Start fade-out transition
+        preloader.classList.add('fade-out');
+
+        // After transition ends (0.6s), remove from layout
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 600); // Match the transition time
+      }
+    }, 1500);
+  });
+</script>
+<!-- preeloader -->
+
 
 </body>
 </html>
