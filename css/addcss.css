@@ -45,6 +45,9 @@ html{
 
 
 /*header*/
+.navbar-toggler img{
+	width: 42px;
+}
 .header-title{
 	background: linear-gradient(90deg, #A47A1E 0%, #D3AB4C 17.5%, #D3A84C 34.5%, #E6BE69 51.5%, #FFD87C 71.5%, #B58F3E 85.5%, #956D13 99.99%);
 	padding: 10px 0px;
@@ -892,6 +895,118 @@ div#navbarNav{
 	left: 24px !important;
 }
 
+/*practice area*/
+.practise-banner{
+	background-image: url(../img/practise.png) !important;
+}
+.practoce-tabs-main{
+	padding: 65px 0px;
+}
+.practice-tabs-main .card{
+	background-color: transparent !important;
+}
+.practice-tabs-main .nav-tabs{
+	border-bottom: 0px;
+	justify-content: center;
+}
+.practice-tabs-main .nav-tabs .nav-link{
+	border: none !important;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    outline: none !important;
+    margin: 0px 15px;
+}
+.practice-tabs-main .nav-link.active{
+	background-color: transparent !important;
+	color: #D3AB4C !important;
+	border: 1px solid #D3AB4C !important;
+	border-radius: 20px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	border-color: #D3AB4C !important;
+}
+.practice-tabs-main .nav-link:hover{
+	border: 1px solid #D3AB4C !important;
+	border-radius: 20px;
+	color: #D3AB4C !important;
+}
+.dui-practice-content{
+	margin-top: 22px;
+}
+.dui-practice-content p{
+	font-size: 18px;
+	color: #A6A6A6;
+	font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.practice-content-details{
+	background-color: black;
+	padding: 32px;
+	border-radius: 20px;
+}
+.practice-content-details table{
+	width: 100%;
+	color: white;
+}
+.practice-content-details table tr{
+	border-bottom: 1px solid #ffffff1c;
+	padding: 12px 0px;
+}
+.practice-content-details table tr th{
+	padding: 12px 0px;
+	width: 50%;
+	font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+.practice-content-details table tr td{
+	padding: 12px 0px;
+	width: 50%;
+	color: #A6A6A6;
+	font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.practice-content-details ul{
+	width: 572px;
+	padding-left: 0px;
+	border-bottom: 1px solid  #5A5A5A;
+	margin: 0 auto;
+	margin-bottom: 48px !important;
+}
+.practice-content-details ul li{
+	display: inline-flex;
+	font-size: 16px;
+	color: #5A5A5A;
+	font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    list-style: none;
+    margin-right: 38px;
+    align-items: center;
+}
+.practice-content-details ul li:last-child{
+	margin-right: 0px !important;
+}
+.practice-content-details .active{
+	color: #D3AB4C !important;
+}
+.practice-content-details ul li img{
+	width: 16px;
+	margin-right: 8px;
+}
+.desktop-hide-consultant-button{
+	display: none !important;
+}
+.banner-content-mb-view{
+	display: none;
+}
+.client-detail-mb{
+	display: none;
+}
+.show-space-on-mb{
+	display: none;
+}
 
 
 
@@ -918,277 +1033,168 @@ div#navbarNav{
 
 /*media query*/
 @media screen and (max-width: 768px){
-	.header-text{
+	.navbar-brand{
+		width: fit-content;
+		margin-right: 0px !important;
+	}
+	.desktop-hide-consultant-button{
+		display: block !important;
+	}
+	.header-right-button-mb{
 		display: none;
 	}
-	.button-blue{
+	.banner-content h1 {
+	    font-size: 30px;
+	    line-height: 38px;
+	}
+	.banner-content p {
+	    font-size: 18px;
+	}
+	.banner-content-desktop-view{
 		display: none;
 	}
-	.twopartners-img{
-		display: none;
+	.banner-content-mb-view{
+		display: block;
 	}
-	.next-step-box-main {
-	    grid-template-columns: 100%;
+	.logo-slider-heading h2 {
+	    font-size: 24px;
+	    line-height: 38px;
 	}
-	.dui-boxes-main {
-	    grid-template-columns: 100%;
-	    gap: 50px;
+	.logo-left-vector{
+		width: 80px;
+		left: 10px;
 	}
-	.flex-design{
-		flex-direction: column-reverse;
+	.logo-right-vector{
+		width: 80px;
+		right: 10px;
 	}
-	.flexibleimg img{
-		margin-bottom: 53px;
+	.logo-slider-paragraph p {
+	    font-size: 18px;
 	}
-	.flexible-design{
-		text-align: center;
-	}
-	.flexible-design h3 {
-        font-size: 60px;
-    }
-    .flexible-sec{
-    	padding: 50px 0px;
-    }
-    .banner-content h1{
-    	font-size: 30px;
-    	margin-bottom: 10px;
-    }
-    .banner-content p{
-    	font-size: 26px;
-    	line-height: 35px;
-    }
-    .banner-section{
-    	background-image: url(../img/mb-bg.png);
-    	height: 50vh;
-        padding: 30px 0px 130px;
-    }
-    .first-name-space-on-mb{
-    	margin-bottom: 25px;
-    }
-    .form-main {
-	    padding: 40px 31px;
-	    margin-top: 35px;
-    }
-    .border-bottom-design{
-    	padding-bottom: 50px;
-    }
-    .dui-matters {
-        padding: 50px 0px 50px;
-    }
-    .top-lawyers{
-    	display: none;
-    }
-    .mobile-top-lawyers{
-    	display: block;
-    }
-    .mobile-top-lawyers{
-	    position: absolute;
-	    top: 53%;
-	    left: 50%;
+	.affordable-defense-img img {
 	    width: 100%;
-	    transform: translateX(-50%);
-    }
-    .mobile-top-lawyers .top-lawyers-list{
-     	text-align: center;
-    }
-    .mobile-top-lawyers .top-lawyers-list ul li{
-    	text-align: center;
-    }
-    .mobile-top-lawyers .top-lawyers-list img{
-    	width: 186px;
-    	margin-top: 16px;
-    }
-    .testimonial-section-on-mobile{
-    	padding-top: 335px;
-    	display: block;
-    }
-    .testimonial-heading{
-    	display: no;
-    }
-    .testimonial-heading h2{
-    	display: none;
-    }
-    .testimonial-main{
-    	max-width: 100%;
-    	width: 100%;
-    }
-    .testimonial-heading{
-    	text-align: center;
-    }
-    .testimonial-review-main{
-    	justify-content: center;
-    }
-    .carousel-item{
-    	text-align: center;
-    }
-    button.carousel-control-next{
-		display: none;
 	}
-	.contact-us-form {
-	    padding: 50px 0px 0px;
+	.affordable-content {
+		padding-left: 0px;
+	    text-align: center;
 	}
-	.footer-para-content p{
-		text-align: center;
+	.affordable-content h2 {
+	    font-size: 24px;
 	}
-	.footer-logo-new {
+	.affordable-content p {
+	    font-size: 16px;
+	}
+	.affordable-content button{
+		width: 100%;
+	}
+	.start-case-form {
+	    width: 100%;
+	}
+	.start-case-section {
 	    flex-direction: column-reverse;
 	}
-	.footer-logo-new img{
-		margin-bottom: 38px;
+	.start-case-image {
+	    width: 100%;
 	}
-	.dui-on-mb-img img{
-		width: 100%;
-		margin-bottom: 30px;
+	.start-case-form {
+	    padding: 95px 20px 0px 20px;
 	}
-	.truck-and-vehicle-section{
-		display:none;
+	.mb-widt-design{
+		flex-direction: column !important;
 	}
-	.charged-dui-on-mb{
+	.start-case-form{
+		text-align: center;
+	}
+	.start-case-form h3 {
+	    font-size: 24px;
+	    line-height: 38px;
+	}
+	.start-case-form p {
+	    font-size: 16px;
+	}
+	.subscribe-now-main{
 		display: block;
 	}
-	.testimonial-section{
+	.subscribe-now-content {
+	    width: 100%;
+	    margin-bottom: 16px;
+	}
+	.subscribe-now-input {
+	    width: 100%;
+	    padding-left: 0px;
+	}
+	.navbar-nav .nav-link {
+	    padding: 10px 0px !important;
+	}
+	.footer-list ul{
+		text-align: center;
+	}
+	.footer-list ul li {
+	    font-size: 14px;
+	    margin-right: 10px;
+	}
+	.footer-socials {
+	    text-align: center;
+	    margin-top: 16px;
+	}
+	.footer-socials a img {
+	    width: 24px;
+	}
+	.all-right-reserved{
+		display: flex;
+		flex-direction: column;
+	}
+	.terms-services{
+		margin-top: 14px;
+	}
+	.slide-track .slide img {
+	    width: 82px !important;
+	}
+	.client-details{
 		display: none;
 	}
-	.best-choosing-content{
-		text-align: center;
-		padding-bottom: 50px;
+	.client-detail-mb{
 		position: relative;
-	}
-	.best-choosing-content:after{
-		display: block;
-        content: "";
-        height: 1px;
-        width: 94%;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        bottom: 0px;
-        background-color: rgb(16, 96, 146);
-	}
-	.best-choosing-content h2{
-		color: #106092;
-		line-height: 30px;
-	}
-	.Client-benefits{
-		padding-top: 50px;
-		text-align: center;
-	}
-	.Client-benefits ul{
-		text-align: left;
-	}
-	.border-bottom-design{
-		border: none !important;
-		position: relative;
-	}
-	.border-bottom-design:after{
-		display: block;
-        content: "";
-        height: 1px;
-        width: 94%;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        bottom: 0px;
-        background-color: rgb(16, 96, 146);
-	}
-	.dui-on-mb-img h2{
-		font-size: 28px;
-		color: #020C40;
-		font-family: "Montserrat", serif;
-	font-weight: 700;
-	margin-bottom: 35px;
-	text-align: center;
-	line-height: 30px;
-	}
-	.dui-on-mb-img ul{
-		padding-left: 0px;
-		margin-bottom: 0px;
-	}
-	.dui-on-mb-img ul li{
-		font-size: 18px;
-		color: #020C40;
-		font-family: "Montserrat", serif;
-	    font-weight: 500;
-	    margin-bottom: 13px;
-	   display: inline-flex;
-       align-items: baseline;
-	}
-	.dui-on-mb-img ul li:last-child{
-		margin-bottom: 0px;
-	}
-	.dui-on-mb-img ul li img{
-		width: 20px;
-		position: relative;
-        top: 5px;
-        margin-right: 12px;
-	}
-	.best-choosing {
-	    padding: 50px 0px 0px;
-	}
-    .carousel-indicators{
+		bottom: 50px;
+	    overflow-x: scroll;
 	    display: block !important;
-    }
-    .carousel-indicators [data-bs-target]{
-    	background-color: #D6D0ED !important;
-    	height: 16px !important;
-    	width: 16px !important;
-    	border-radius: 50% !important;
-    }
-    .carousel-indicators {
-	    bottom: -35px !important;
-	    display: flex !important;
-	    justify-content: center;
-	    padding: 0;
-	    margin-bottom: 0px !important;
 	}
-	.carousel-indicators .active{
-		background-color: #020C40 !important;
+	.client-detail-mb-main{
+	    display: -webkit-inline-box !important;
+	    padding: 0px 20px;
 	}
-	.Client-benefits ul li{
-	    display: inline-flex;
-	    align-items: baseline;
-	    margin-bottom: 0px !important;
-    }
-    .Client-benefits ul li img{
-    	position: relative;
-    	top: 5px;
-    }
-    .top-lawyers-list ul li img{
-    	width: 24px !important;
-    	margin-right: 20px;
-    	margin-top: 0px !important;
-    }
-    .hide-on-mobile{
-    	display: none;
-    }
-    .mobilendlaunguage a{
-    	font-size: 18px;
-    	color: #020C40;
-    	font-family: "Montserrat", serif;
-	    font-weight: 600;
-	    text-decoration: none;
-    }
-    .mobilendlaunguage{
-    	display: flex !important;
-    	justify-content: space-between;
-    	align-items: center;
-    }
-    .mobilendlaunguage select{
-    	border: none;
-    	width: fit-content;
-    	outline: none;
-    	box-shadow: none;
-    	font-family: "Montserrat", serif;
-	    font-weight: 600;
-	    background-color: transparent;
-    }
-    .form-select:focus {
-	    border-color: none !important;
-	    outline: 0;
-	    box-shadow: none !important;
+	.client-detail-mb-box{
+		width: 300px;
 	}
-	.mobilendlaunguage{
+	.logo-slider{
+		padding: 50px 0px;
+	}
+	.show-space-on-mb{
 		display: block;
+	}
+	.hide-space-on-mb{
+		display: none;
+	}
+	.choose-us {
+	    padding: 64px 0px 0px 0px;
+	    background-image: url(../img/choosemb.jpg);
+	    background-color: rgba(0, 0, 0, 0.5);
+	    height: 650px;
+	}
+	.choose-us-content h3 {
+	    font-size: 24px;
+	}
+	.our-legal-img img{
+		display: none;
+	}
+	.legal-team-detail {
+	    margin-top: 0px;
+	}
+	.legal-team-detail h3 {
+	    font-size: 24px;
+	}
+	.legal-team-detail ul li {
+	    font-size: 16px;
 	}
 }
 
